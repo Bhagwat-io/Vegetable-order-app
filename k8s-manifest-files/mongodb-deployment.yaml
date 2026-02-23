@@ -1,10 +1,11 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: mongodb-deployment
   namespace: bhagwat-ns
 spec:
-  replicas: 1
+  replicas: 5
+  serviceName: "mongodb-svc"
   selector:
     matchLabels:
       app: mongodb
