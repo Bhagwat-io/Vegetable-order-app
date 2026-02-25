@@ -26,4 +26,4 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-configmap
-                  key: MONGO_URL
+                  key: MONGO_URI
