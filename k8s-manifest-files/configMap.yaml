@@ -4,5 +4,5 @@ metadata:
   name: veg-config
   namespace: bhagwat-ns
 data:
-  MONGO_URL: "mongodb://mongodb-svc:27017/vegetable_order_app"
+  MONGO_URI: "mongodb://mongodb-svc:27017/vegetable_order_app"
   MONGO_INITDB_DATABASE: "vegetable_order_app"
