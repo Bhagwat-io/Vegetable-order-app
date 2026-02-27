@@ -26,4 +26,4 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: veg-config
-                  key: MONGO_URL
+                  key: MONGO_URI
