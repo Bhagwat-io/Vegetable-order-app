@@ -22,8 +22,8 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            - name: MONGODB_URI
+            - name: MONGODB_URL
               valueFrom:
                 configMapKeyRef:
                   name: veg-config
-                  key: MONGO_URI
+                  key: MONGO_URL
