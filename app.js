@@ -16,7 +16,7 @@ app.use(express.static('public')); // Serve static files from the 'public' direc
 // Connect to MongoDB
 const connectToDatabase = async () => {
     try {
-        const mongoUri = process.env.MONGODB_URL || 'mongodb://localhost:27017/vegetable_order_app';
+        const mongoUri = process.env.MONGODB_URI || 'mongodb://mongodb-svc:27017/vegetable_order_app';
 
         await mongoose.connect(mongoUri, {
             // These options are no longer needed in Mongoose 6+, but you can keep them if you want
