@@ -22,7 +22,7 @@ spec:
           ports:
             - containerPort: {{ .Values.deployment.port }}
           env:
-            - name: MONGODB_URL
+            - name: MONGODB_URI
               valueFrom:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-configmap
