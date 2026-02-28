@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 // Kubernetes MongoDB Service DNS
 const MONGO_URI =
-  process.env.MONGO_URL || 'mongodb://vegetable-app-mongodb-svc:27017/vegetable_order_app';
+  process.env.MONGODB_URI || 'mongodb://vegetable-app-mongodb-svc:27017/vegetable_order_app';
 
 /* =========================
    MIDDLEWARE
