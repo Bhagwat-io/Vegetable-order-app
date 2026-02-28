@@ -25,3 +25,6 @@ jobs:
         uses: helm/chart-releaser-action@v1.6.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_BRANCH: gh-pages        # branch to push index.yaml
+          CR_PACKAGE_DIR: veg-app    # your Helm chart folder
+          CR_INDEX_PATH: index.yaml
